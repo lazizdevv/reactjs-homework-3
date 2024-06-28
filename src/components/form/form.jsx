@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
 import AddTaskIcon from '../../assets/add-task'
 
-function TaskForm({ addTask }) {
+const TaskForm =({ addTask }) =>{
     const [taskText, setTaskText] = useState('');
 
     const handleAddTask = (e) => {

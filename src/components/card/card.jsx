@@ -4,7 +4,7 @@ import DelIcon from '../../assets/delete-icon'
 import EditIcon from '../../assets/edit-icon'
 import SendIcon from '../../assets/send-icon'
 
-function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, currentTask, setCurrentTask }) {
+const TaskCard =({ task, isEditing, startEditing, deleteTask, updateTask, currentTask, setCurrentTask }) => {
     const handleUpdate = () => {
         updateTask(currentTask.text);
         setCurrentTask({});
