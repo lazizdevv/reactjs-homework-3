@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AddTaskIcon from '../../assets/add-task'
 
 function TaskForm({ addTask }) {
     const [taskText, setTaskText] = useState('');
@@ -25,14 +26,14 @@ function TaskForm({ addTask }) {
                     value={taskText}
                     onChange={(e) => setTaskText(e.target.value)}
                     placeholder="Enter New Task"
-                    className="flex-grow p-2 text-center border border-gray-300 bg-transparent text-white rounded focus:outline-none"
+                    className="flex-grow p-2 text-lg text-center border border-gray-500 bg-transparent text-white rounded focus:outline-none"
                     onKeyPress={handleKeyPress}
                 />
                 <button
                     type="submit"
-                    className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+                    className="bg-blue-500 text-white p-2 px-4 rounded hover:bg-blue-600"
                 >
-                    Add Task
+                    <AddTaskIcon/>
                 </button>
             </div>
         </form>
