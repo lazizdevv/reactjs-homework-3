@@ -1,10 +1,8 @@
 import React from 'react';
-
+// -------------- icons ---------------------
 import DelIcon from '../../assets/delete-icon'
 import EditIcon from '../../assets/edit-icon'
 import SendIcon from '../../assets/send-icon'
-
-
 
 function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, currentTask, setCurrentTask }) {
     const handleUpdate = () => {
@@ -37,25 +35,25 @@ function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, curre
                 {isEditing ? (
                     <button
                         onClick={handleUpdate}
-                        className="bg-green-500 text-white ml-2 p-2 px-4 rounded-md hover:bg-green-600"
+                        className="bg-green-500 text-white ml-2 p-2 px-4 rounded hover:bg-green-600"
                     >
                         <SendIcon/>
                     </button>
                 ) : (
-                    <>
+                    <div>
                         <button
                             onClick={startEditing}
-                            className="bg-yellow-400 text-white p-2 px-4 rounded-md mr-2 hover:bg-yellow-500"
+                            className="bg-yellow-500 text-white p-2 px-4 rounded mr-2 hover:bg-yellow-600"
                         >
                             <EditIcon/>
                         </button>
                         <button
                             onClick={deleteTask}
-                            className="bg-red-500 text-white p-2 px-4 rounded-md hover:bg-red-600"
+                            className="bg-red-500 text-white p-2 px-4 rounded hover:bg-red-600"
                         >
                             <DelIcon/>
                         </button>
-                    </>
+                    </div>
                 )}
             </div>
         </li>
