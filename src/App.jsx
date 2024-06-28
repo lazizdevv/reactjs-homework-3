@@ -37,7 +37,7 @@ function App() {
 
     return (
         <div className="min-h-screen flex flex-col items-center  bg-gray-700">
-            <div className="bg-gray-600 p-8 rounded-lg shadow-md w-full max-w-xl ">
+            <div className="bg-gray-600 mt-5 p-8 rounded-lg shadow-md w-full max-w-xl ">
                 <TaskForm addTask={addTask} />
                 <ul className="list-none p-0 w-full max-w-xl">
                     {tasks.map((task, index) => (

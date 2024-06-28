@@ -19,7 +19,7 @@ function TaskForm({ addTask }) {
 
     return (
         <form onSubmit={handleAddTask}>
-            <div className="flex mb-12 gap-2">
+            <div className="flex mb-5 gap-2">
                 <input
                     type="text"
                     value={taskText}
