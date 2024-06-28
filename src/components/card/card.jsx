@@ -40,7 +40,7 @@ function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, curre
                         <SendIcon/>
                     </button>
                 ) : (
-                    <div>
+                    <>
                         <button
                             onClick={startEditing}
                             className="bg-yellow-500 text-white p-2 px-4 rounded mr-2 hover:bg-yellow-600"
@@ -53,7 +53,7 @@ function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, curre
                         >
                             <DelIcon/>
                         </button>
-                    </div>
+                    </>
                 )}
             </div>
         </li>
