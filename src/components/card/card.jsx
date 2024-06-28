@@ -29,7 +29,7 @@ function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, curre
                     onKeyPress={handleKeyPress}
                 />
             ) : (
-                <h1 className="font-bold text-white  w-full max-w-xs break-words overflow-hidden">{task.text}</h1>
+                <h1 className="font-bold font-sans text-white  w-full max-w-xs break-words overflow-hidden">{task.text}</h1>
             )}
             <div className="my-2 flex justify-between items-center">
                 {isEditing ? (
@@ -58,10 +58,10 @@ function TaskCard({ task, isEditing, startEditing, deleteTask, updateTask, curre
             </div>
         </li>
             <div className="mt-2 flex justify-between w-full p-2">
-                <span className="text-xs text-yellow-400 font-bold">
+                <span className="text-xs text-yellow-400 font-bold font-mono">
                     {task.edited ? 'Edited' : ''}
                 </span>
-                <span className="text-xs text-gray-100 font-bold">
+                <span className="text-xs text-gray-100 font-bold font-mono">
                     Created: {task.createdAt}
                 </span>
             </div>

@@ -6,7 +6,7 @@ function TaskForm({ addTask }) {
 
     const handleAddTask = (e) => {
         e.preventDefault();
-        if (taskText.trim() !== '') {
+        if (taskText !== '') {
             addTask(taskText);
             setTaskText('');
         }
@@ -26,7 +26,7 @@ function TaskForm({ addTask }) {
                     value={taskText}
                     onChange={(e) => setTaskText(e.target.value)}
                     placeholder="Enter New Task"
-                    className="flex-grow p-2 text-lg text-center border border-gray-500 bg-transparent text-white rounded focus:outline-none"
+                    className="flex-grow p-2 text-lg font-sans text-center border border-gray-500 bg-transparent text-white rounded focus:outline-none"
                     onKeyPress={handleKeyPress}
                 />
                 <button
